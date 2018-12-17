@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_main_test_init"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="测试native初始 Local Ref"/>
+
+    <Button
+        android:id="@+id/btn_main_test_overflow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="测试Local Ref 上限"/>
+
+    <Button
+        android:id="@+id/btn_main_test_delete_local_ref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="测试DeleteLocalRef"/>
+
+    <Button
+        android:id="@+id/btn_main_test_ensure_capacity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="测试EnsureLocalCapacity"/>
+    <Button
+        android:id="@+id/btn_main_test_push_local_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="测试PushLocalFrame"/>
+
+
+    <Button
+        android:id="@+id/btn_main_test_is_same"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="测试isSame"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_main_test_init_weak_ref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:text="初始化GlobalWeak"/>
+
+        <Button
+            android:id="@+id/btn_main_test_gc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:text="触发gc"/>
+
+        <Button
+            android:id="@+id/btn_main_test_global_weak_ref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:text="测试GlobalWeak"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_main_test_ref_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="查看引用类型"/>
+    <Button
+        android:id="@+id/btn_main_test_array"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="数组、字符串相关Demo页"/>
+
+</LinearLayout>
